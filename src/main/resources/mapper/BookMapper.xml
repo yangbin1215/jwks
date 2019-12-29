@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yb.mapper.BookMapper">
+    <update id="updateBookInfo">
+        update book set bname = #{bname}, bcost = #{bcost}, bnum = #{bnum} where bid = #{bid};
+    </update>
+    <select id="getBookList" resultType="com.yb.pojo.Book">
+        select * from book;
+    </select>
+    <select id="getBookByBid" resultType="com.yb.pojo.Book">
+        select * from book where bid = #{bid};
+    </select>
+</mapper>

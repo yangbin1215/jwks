@@ -1,0 +1,176 @@
+-------------------------------------------------------------------------------
+Test set: com.yb.SpringsecuritydemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 17.939 s <<< FAILURE! - in com.yb.SpringsecuritydemoApplicationTests
+orderTest  Time elapsed: 2.784 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [E:\IDEA Projects\SpringBoot_lean\springsecuritydemo\target\classes\mapper\OrderMapper.xml]
+### The error may involve com.yb.mapper.OrderMapper.addOrder
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.orderTest(SpringsecuritydemoApplicationTests.java:69)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [E:\IDEA Projects\SpringBoot_lean\springsecuritydemo\target\classes\mapper\OrderMapper.xml]
+### The error may involve com.yb.mapper.OrderMapper.addOrder
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.orderTest(SpringsecuritydemoApplicationTests.java:69)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: 
+Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.orderTest(SpringsecuritydemoApplicationTests.java:69)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.orderTest(SpringsecuritydemoApplicationTests.java:69)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.orderTest(SpringsecuritydemoApplicationTests.java:69)
+Caused by: java.net.SocketException: Connection reset
+	at com.yb.SpringsecuritydemoApplicationTests.orderTest(SpringsecuritydemoApplicationTests.java:69)
+
+userTest  Time elapsed: 4.095 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [E:\IDEA Projects\SpringBoot_lean\springsecuritydemo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.yb.mapper.UserMapper.updatePwd
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.userTest(SpringsecuritydemoApplicationTests.java:60)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [E:\IDEA Projects\SpringBoot_lean\springsecuritydemo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.yb.mapper.UserMapper.updatePwd
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.userTest(SpringsecuritydemoApplicationTests.java:60)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: 
+Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.userTest(SpringsecuritydemoApplicationTests.java:60)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.userTest(SpringsecuritydemoApplicationTests.java:60)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.userTest(SpringsecuritydemoApplicationTests.java:60)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.yb.SpringsecuritydemoApplicationTests.userTest(SpringsecuritydemoApplicationTests.java:60)
+
+contextLoads  Time elapsed: 4.079 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [E:\IDEA Projects\SpringBoot_lean\springsecuritydemo\target\classes\mapper\AuthorityMapper.xml]
+### The error may involve com.yb.mapper.AuthorityMapper.queryAuthorityByUid
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.contextLoads(SpringsecuritydemoApplicationTests.java:36)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [E:\IDEA Projects\SpringBoot_lean\springsecuritydemo\target\classes\mapper\AuthorityMapper.xml]
+### The error may involve com.yb.mapper.AuthorityMapper.queryAuthorityByUid
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.contextLoads(SpringsecuritydemoApplicationTests.java:36)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: 
+Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.contextLoads(SpringsecuritydemoApplicationTests.java:36)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.contextLoads(SpringsecuritydemoApplicationTests.java:36)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.contextLoads(SpringsecuritydemoApplicationTests.java:36)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.yb.SpringsecuritydemoApplicationTests.contextLoads(SpringsecuritydemoApplicationTests.java:36)
+
+bookTest  Time elapsed: 4.075 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [E:\IDEA Projects\SpringBoot_lean\springsecuritydemo\target\classes\mapper\BookMapper.xml]
+### The error may involve com.yb.mapper.BookMapper.updateBookInfo
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.bookTest(SpringsecuritydemoApplicationTests.java:48)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [E:\IDEA Projects\SpringBoot_lean\springsecuritydemo\target\classes\mapper\BookMapper.xml]
+### The error may involve com.yb.mapper.BookMapper.updateBookInfo
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.bookTest(SpringsecuritydemoApplicationTests.java:48)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: 
+Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.bookTest(SpringsecuritydemoApplicationTests.java:48)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.bookTest(SpringsecuritydemoApplicationTests.java:48)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yb.SpringsecuritydemoApplicationTests.bookTest(SpringsecuritydemoApplicationTests.java:48)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.yb.SpringsecuritydemoApplicationTests.bookTest(SpringsecuritydemoApplicationTests.java:48)
+
